@@ -19,17 +19,18 @@ function toRoman(num){
 
     while (num > 0){
     for (let roman in romanNumerals){
-        if (romanNumerals[roman] > num) continue;
+        if (romanNumerals[roman] > num) continue; // Skips all iterations where no calculation will be needed.
         newRoman += roman;
+        // console.log(num);
         num -= romanNumerals[roman];
-        break;
+        break; // ends the loop, and causes it to restart because num is greater than 0
     }
 }
-    console.log(newRoman);
+    console.log(newRoman); // Visual aid
     return newRoman;
 
 };
-toRoman(6);
+toRoman(28);
 
 
 
