@@ -30,7 +30,7 @@ function toRoman(num){
     return newRoman;
 
 };
-toRoman(28);
+toRoman(2);
 
 
 
